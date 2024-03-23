@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.header {
+  background: url(./images/martin-martz-7ELYu7jeEwo-unsplash.jpg);
+  height: 100%;
+  background-color: blueviolet;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-blend-mode: darken;
+}
+.header h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.promt_area {
+  display: flex;
+  margin-top: 30px;
+  background-color: #fff;
+  height: 40px;
+  width: 550px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+}
+.promt_area input {
+  width: 350px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.dropdown {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+select {
+  outline: none;
+  border: none;
+}
+option {
+  font-size: 15px;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.promt_area button {
+  padding: 7px 15px;
+  margin-right: 7px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #8a2b16;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.image_gallary {
+  height: 100%;
+  min-height: calc(100vh-40vh);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+  margin-top: 20px;
+  gap: 15px;
+}
+.image_group {
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  background-color: #efefeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  object-fit: cover;
+}
+.image_group .main_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.artificial {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.image_group a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  background-color: #4a69695a;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  width: 37px;
+  padding-bottom: 5px;
+  z-index: 21;
+}
+
+.image_group a:hover {
+  display: flex;
+}

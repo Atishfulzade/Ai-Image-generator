@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>AI Image generator tool</h1>
+        <p>
+          Convert your text into Images within a second<br />using this
+          javascript-powered AI Image generation tool
+        </p>
+        <form action="" class="formInput">
+          <div class="promt_area">
+            <input
+              type="text"
+              placeholder="Colorful hot air baloon floting in the sky"
+              required
+            />
+            <div class="dropdown">
+              <select name="images" id="image">
+                <option value="4">4 Images</option>
+                <option value="2">2 Images</option>
+                <option value="3">3 Images</option>
+                <option value="5">5 Images</option>
+              </select>
+            </div>
+            <button type="submit">Generate</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="image_gallary">
+     
+     
+    <script src="./app.js"></script>
+  </body>
+</html>
