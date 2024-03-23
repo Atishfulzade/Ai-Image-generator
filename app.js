@@ -1,7 +1,9 @@
 const generateForm = document.querySelector(".formInput");
 const imageGallary = document.querySelector(".image_gallary");
-const OPENAI_API_KEY = "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";
+
 const generateAiImages = async (userInput, imageQuantity) => {
+  dotenv.config();
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
   try {
     const response = await fetch(
       "https://api.openai.com/v1/images/generations",
